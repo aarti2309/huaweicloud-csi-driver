@@ -26,7 +26,7 @@ sfs:
 .PHONY: sfs-image
 sfs-image:sfs
 	cp ./sfs-csi-plugin ./cmd/sfs-csi-plugin
-	docker build cmd/sfs-csi-plugin -t zhenguo/sfs-csi-plugin:latest
+	docker build cmd/sfs-csi-plugin -t atos-cfcr/sfs-csi-plugin:latest
 
 .PHONY: fmt
 fmt:

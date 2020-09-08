@@ -1,9 +1,9 @@
 [Global]
-auth-url=https://iam.eu-west-0.prod-cloud-ocb.orange-business.com/v3
-access-key=REPLACE-WITH-YOUR-AK
-secret-key=REPLACE-WITH-YOUR-SK
-region=eu-west-0
+auth-url=https://iam.ap-southeast-1.myhuaweicloud.com:443/v3
+access-key=J94MR1SNRVABW9CLLDAC
+secret-key=faLmjhIbAr0uzagoOt9BupaRuwBZkYr6sQvu8Reu
+region=ap-southeast-1
 
 [Vpc]
 #The VPC where your cluster resides
-id=8eed4fc7-e5e5-44a2-b5f2-23b3e5d46235
+id=88829a8a-6491-471b-9ca4-2f26a70fafea

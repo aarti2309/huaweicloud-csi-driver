@@ -94,16 +94,20 @@ spec:
             path: /var/lib/kubelet/plugins/sfs.csi.huaweicloud.com
             type: DirectoryOrCreate
           name: socket-dir
-        - hostPath:
-            path: /var/lib/kubelet/
-            type: DirectoryOrCreate
-          name: mountpoint-dir
+        - name: mountpoint-dir
+          nfs:
+            server: sfs-nas01.ap-southeast-1a.myhuaweicloud.com #:/share-7d9ffb88
+            path: /share-7d9ffb88
+#        - hostPath:
+#            path: /var/lib/kubelet/
+#            type: DirectoryOrCreate
+#          name: mountpoint-dir
         - hostPath:
             path: /var/lib/kubelet/plugins_registry/
             type: DirectoryOrCreate
           name: registration-dir
         - hostPath:
             path: /etc/sfs/
-            type: Directory
+            type: DirectoryOrCreate
           name: sfs-config
 ---
